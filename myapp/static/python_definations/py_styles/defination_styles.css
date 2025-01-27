@@ -1,0 +1,25 @@
+.definations {
+    background-color: rgba(255, 255, 255, 0.90); /* 25% transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Black shadow for the box */
+    padding: 20px; /* Adds some padding inside the box */
+    border-radius: 8px; /* Optional: Rounded corners for better aesthetics */
+    max-width: 650px; /* Optional: Limit width */
+    margin: 20px auto; /* Center the box horizontally */
+}
+
+.definations p {
+    max-width: 650px;
+    color: black; /* Black font color */
+    font-size: 20px; /* Optional: Set font size */
+}
+pre{
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-left: 5px solid #666;
+    padding: 5px;
+    font-size: 16px;
+}
+
+code{
+    font-family: Consolas,monospace;
+}

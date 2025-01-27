@@ -1,0 +1,113 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% transparency */
+    color: black;
+    border-radius: 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 60px;
+    height: 50px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links li a:hover {
+    color: #ddd;
+}
+
+/* Toggle (burger icon) */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    /* Toggle Links on Click */
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+bodys {
+    background-image: url('images/binary.jpg'); /* Replace with your image path */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+body {
+    background: rgba(0, 0, 0, 0.75) url('images/binary.jpg'); /* Add a semi-transparent black overlay */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-blend-mode: multiply; /* Blend the color and the image */
+}
+
+
+
+
+/*  index page */
+
+
+/*-------course-cards-----*/
+
+
+
+

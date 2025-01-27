@@ -1,0 +1,240 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    KOTLIN
+{% endblock %}
+
+{% block content %}
+<div class="about">
+    <p><b><h1>kotlin   </b> <img src="{% static 'styles/images/kotlin.png' %}" alt="Python Logo" class="header-image" ><br></h1>   
+        
+
+<b>1.  Introduction :  </b>  <br>
+   Kotlin is a modern, statically-typed programming language designed to be concise, expressive, and interoperable with Java. It was developed by  JetBrains  and officially released in 2011. Kotlin is versatile, being suitable for Android development, server-side applications, and more.
+   <br><br>
+   <b>2.  Timeline :  </b>  <br>
+   -  2010 : Development begins at JetBrains.  <br>
+   -  2011 : Kotlin’s first public release.  <br>
+   -  2016 : Kotlin 1.0 is released as a stable version. <br> 
+   -  2017 : Google announces official support for Kotlin as a language for Android development.  <br>
+   -  2019 : Kotlin becomes Google’s preferred language for Android development.  <br>
+   -  2023 : Kotlin continues to evolve with the latest version emphasizing performance and multiplatform development.<br>
+   <br>
+   <b>3.  Key Features :  </b>  <br>
+   -  Conciseness : Reduces boilerplate code compared to Java.  <br>
+   -  Null Safety : Minimizes null pointer exceptions with nullable and non-nullable types.  <br>
+   -  Interoperability : Works seamlessly with Java libraries and frameworks.  <br>
+   -  Coroutines : Simplifies asynchronous programming.  <br>
+   <br>
+   <b>4.  Usage in Industries : </b>  <br>
+   -  Android Development : Building apps for Android platforms.  <br>
+   -  Server-Side Development : Using frameworks like Ktor and Spring.  <br>
+   -  Multiplatform Development : Sharing code between Android, iOS, and web projects.  <br>
+   -  Enterprise Applications : Modernizing Java-based systems.  <br>
+   <br>
+   <b>5.  Popularity :  </b>  <br>
+   Kotlin has gained rapid adoption due to its modern features, strong Android integration, and backing by Google. It’s a top choice for developers transitioning from Java.
+   <br><br>
+   <b>6.  Performance :  </b>  <br>
+   Kotlin compiles to JVM bytecode, providing similar performance to Java. It also compiles to JavaScript and native binaries for multiplatform projects, offering competitive speed across platforms.
+   <br><br>
+   <b>7.  Challenges :  </b>  <br>
+   - Smaller ecosystem compared to Java.  <br>
+   - Longer compilation times in some cases.  <br>
+   - Developers new to Kotlin may face a learning curve, especially with advanced features like coroutines.<br>
+   <br>
+   <b>8.  Modern Features :  </b>  <br>
+   -  Extension Functions : Add functionality to existing classes without modifying them.  <br>
+   -  Smart Casts : Automatically casts types when safe.  <br>
+   -  Default and Named Arguments : Improve readability and reduce function overloading.  <br>
+   -  Sealed Classes : Simplify working with restricted class hierarchies.  <br>
+   <br>
+   <b>9.  Ecosystem and Tools :  </b>  <br>
+   -  IDEs : Kotlin is natively supported in JetBrains’ IntelliJ IDEA and Android Studio.  <br>
+   -  Frameworks : Ktor for web apps, Kotlin Multiplatform Mobile (KMM) for cross-platform apps.  <br>
+   -  Libraries : Robust integration with Java libraries and new Kotlin-specific libraries.<br>
+   <br>
+   <b>10.  Future of Kotlin :</b>  <br>
+    With Google’s strong support for Android development and its growing adoption in other domains like server-side and cross-platform development, Kotlin is poised for continued growth. Its focus on developer productivity and modern programming paradigms ensures it remains relevant for years to come.<br><br>
+    </p>     
+</div>
+
+<div class="topics">
+    <div class="card-container">
+        <div class="card">
+            <h3>Introduction</h3>    
+            <a href="{% url 'k1'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Var,Int</h3>
+            
+            <a href="{% url 'k2'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Arthematic</h3>
+            
+            <a href="{% url 'k3'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>While Loop</h3>
+            
+            <a href="{% url 'k4'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Strings</h3>
+            
+            <a href="{% url 'k5'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Logical </h3>
+            
+            <a href="{% url 'k6'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Control Flow</h3>
+            
+            <a href="{% url 'k7'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Null Value </h3>
+            
+            <a href="{% url 'k8'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Arrays </h3>
+            
+            <a href="{% url 'k9'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Lists </h3>
+            
+            <a href="{% url 'k10'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+
+    .header-image {
+        width: 50px; /* Adjust size as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image with the middle of the text */
+        margin-right: 10px; /* Adds space between the image and the text */
+    }
+    
+    .topics{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+      gap: 10px; /* Space between cards */
+      max-width: 1200px; /* Optional: limit the max width of the container */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Add some padding around the container */
+    }
+    
+    
+    .about {
+        background-color: #fff; /* Gray background */
+        font: bold ;
+        font-size: 20px;
+        color: #000000; /* White font color */
+        /*text-shadow: 2px 2px 4px green;*/
+        box-shadow: #fff;
+        /*font-family: 'Courier New', Courier, monospace;  Monospaced computer font */
+        padding: 20px; /* Padding for spacing */
+        border-radius: 10px; /* Rounded corners */
+        margin: 20px; /* Margin for spacing around the box */
+        line-height: 1.6; /* Line height for better readability */
+        animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    }
+    
+    
+    
+    /*  styling */
+    .card h3 {
+      font-size: 1.5em;
+      color: #333;
+    }
+    
+    /* Button styling as a link */
+    .card-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: #007bff; /* Button background color */
+      color: #fff; /* Button text color */
+      border: none;
+      border-radius: 5px; /* Rounded button corners */
+      cursor: pointer;
+      font-size: 1em;
+      text-decoration: none; /* Remove underline from link */
+      transition: background-color 0.3s; /* Smooth hover effect */
+    }
+    
+    /* Button hover effect */
+    .card-button:hover {
+      background-color: #0056b3; /* Darken button color on hover */
+    }
+    /* Responsive design */
+    @media (max-width: 1200px) {
+            .card-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 cards per row on medium screens */
+            }
+        }
+    
+        @media (max-width: 900px) {
+            .card-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 cards per row on smaller screens */
+            }
+        }
+    
+        @media (max-width: 600px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile screens */
+            }
+        }
+    
+        @media (max-width: 400px) {
+            .card-container {
+                grid-template-columns: 1fr; /* 1 card per row on very small screens */
+            }
+        }
+    /* Container styling for grid layout */
+    
+    
+    /* Individual card styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    
+    
+    </style>
+
+
+{% endblock %}

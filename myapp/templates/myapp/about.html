@@ -1,0 +1,58 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    LEARN TO CODE
+{% endblock %}
+
+{% block content %}
+<div class="about-container">
+<div class="about-box">
+    <h1>About Us</h1>
+    <p><b>Learn to Code </b>is an educational platform designed to make programming accessible, engaging, and practical for everyone. The website combines high-quality video tutorials, an extensive glossary of coding definitions, and an interactive coding compiler to deliver a comprehensive learning experience for users at all skill levels.
+        <br><br> Whether a beginner just starting with the fundamentals or an advanced learner looking to refine specific skills, Learn to Code caters to a broad audience by offering resources that are intuitive and effective.
+
+        The core of Learn to Code is its library of video lessons, which cover a wide array of programming languages and concepts. These videos, created by experienced instructors and industry professionals, break down complex topics into easily understandable segments. From the basics of Python and JavaScript to advanced concepts in algorithms, data structures, and full-stack development, each lesson is carefully crafted to build a solid understanding of programming concepts. Users can follow along at their own pace, pausing or replaying sections to ensure that they grasp each topic fully. In addition, videos are structured to be interactive, with quizzes and mini-exercises integrated to reinforce learning.
+
+        Complementing the video content is Learn to Code’s comprehensive glossary of programming terms. This feature serves as an on-demand reference tool, giving users quick access to definitions and explanations for technical terms and concepts encountered during their lessons. Each term is defined in simple language to ensure clarity, while examples and real-world applications provide context, making it easier for users to connect theoretical concepts to practical use. The glossary also has a bookmarking feature, allowing learners to save terms they want to revisit or make a personalized list of key concepts. This feature helps users build a robust understanding of the language and terminology specific to coding.
+        
+        Learn to Code’s integrated coding compiler is another standout feature, providing users with a hands-on learning experience. Supporting multiple languages like Python, Java, JavaScript, and C++, the compiler allows users to write, execute, and test their code directly within the platform. This interactive environment gives learners immediate feedback, helping them identify errors and understand code functionality in real-time. With step-by-step practice exercises and coding challenges, users can apply the concepts they’ve learned, reinforcing their skills and building confidence as they progress. The compiler also supports saving projects, which allows users to track their development over time or even create a portfolio of their work.
+        
+        To guide learners through the vast field of programming, Learn to Code offers structured learning paths that group relevant lessons, exercises, and projects into logical progressions. Each path is designed to take users from foundational concepts to more advanced applications, ensuring that they build skills in a systematic and balanced way. Progress tracking and milestone achievements keep users motivated, and a personalized dashboard helps them visualize their journey, celebrate successes, and identify areas for further growth.
+        
+        Additionally, Learn to Code includes a community forum where learners can connect, ask questions, and share their projects. This supportive network provides a space for users to exchange ideas, get feedback, and solve problems together, enhancing the collaborative aspect of coding. 
+        
+        In summary, Learn to Code is a powerful, all-in-one learning platform that combines video tutorials, a comprehensive glossary, and an interactive compiler to offer an engaging and practical way to master programming. With structured learning paths, real-time coding practice, and a supportive community, it makes learning to code accessible and achievable for everyone, from beginners to advanced learners pursuing a career in tech.</p></div></div>
+
+
+        <style>
+            .about-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            }
+        
+            .about-box {
+                background: rgba(255, 255, 255, 0.9); /* Semi-transparent white box */
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 1200px;
+                text-align: left;
+            }
+        
+            .about-box h1 {
+                color: #333;
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+        
+            .about-box p {
+                color: black;
+                line-height: 1.6;
+            }
+        </style>
+{% endblock %}

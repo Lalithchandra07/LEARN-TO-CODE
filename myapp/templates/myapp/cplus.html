@@ -1,0 +1,231 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    c++ 
+{% endblock %}
+
+{% block content %}
+<div class="about">
+    <p><img src="{% static 'styles/images/c++-l.png' %}" alt="Python Logo" class="header-image" ><br><br>
+
+        <b>1. Introduction : </b> <br>
+           C++ is a high-performance, general-purpose programming language developed by Bjarne Stroustrup in 1979. It extends the C programming language with object-oriented programming features, making it versatile for a wide range of applications.
+           <br><br>
+           <b>2. Timeline : </b><br> 
+           - 1979 : Development begins at Bell Labs.  <br>
+           - 1983 : The language is named C++ (from "C with Classes").  <br>
+           - 1998 : First ISO standardization (C++98).  <br>
+           - 2011 : Major update with C++11, introducing modern features like auto, lambdas, and smart pointers. <br> 
+           - 2023 : Latest major release (C++23) with further enhancements for simplicity and performance.<br><br>
+        
+           <b>3. Key Features : </b> <br>
+           - Object-Oriented Programming (OOP) <br> 
+           - Low-level memory manipulation with pointers  <br>
+           - High-performance and portability  <br>
+           - Extensive Standard Template Library (STL)  <br>
+           - Multi-paradigm support (procedural, functional, and generic programming)<br><br>
+        
+           <b>4. Usage in Industries : </b><br>  
+           C++ is widely used in industries such as:<br>  
+           - Game Development (e.g., Unreal Engine) <br> 
+           - System Software (e.g., operating systems, device drivers)  <br>
+           - Embedded Systems  <br>
+           - Financial Systems  <br>
+           - Scientific Computing<br><br>
+        
+           <b>5. Popularity : </b> <br>
+           C++ remains one of the top programming languages due to its balance of efficiency and flexibility. It consistently ranks highly in developer surveys.
+           <br><br>
+           <b>6. Performance : </b> <br> 
+           Known for its exceptional performance, C++ is often used in time-critical applications, as it allows direct hardware interaction and efficient use of resources.
+           <br><br>
+           <b>7. Challenges : </b> <br>
+           - Steep learning curve <br> 
+           - Manual memory management <br> 
+           - Complex syntax compared to newer languages  <br><br>
+        
+           <b>8. Standard Template Library (STL) : </b> <br>
+           The STL provides powerful tools like containers, iterators, and algorithms, enabling faster development of complex software.
+           <br><br>
+           <b>9. Modern Features : </b> <br>
+           Recent updates (C++11 to C++23) focus on improving usability and productivity with features such as:  <br>
+           - Move semantics <br> 
+           - Concurrency support <br> 
+           - Range-based for loops  <br>
+           - Modules and concepts<br>
+           <br><br>
+           <b>10. Future of C++ :  </b><br>  
+           With ongoing development and standardization, C++ is evolving to remain relevant in modern software development while retaining its legacy of performance and flexibility.<br><br></p>
+</div>
+
+<div class="topics">
+    <div class="card-container">
+        <div class="card">
+            <h3>Introduction</h3>
+            <a href="{% url 'cpp1'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Variables </h3>
+            <a href="{% url 'cpp2'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Const </h3>
+            <a href="{% url 'cpp3'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Typedef</h3>
+            <a href="{% url 'cpp4'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Logical </h3>
+            <a href="{% url 'cpp5'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Break & cont </h3>
+            <a href="{% url 'cpp6'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Ternarry </h3>
+            <a href="{% url 'cpp7'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Switch </h3>
+            <a href="{% url 'cpp8'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Overload</h3>
+            <a href="{% url 'cpp9'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Nested Loop</h3>
+            <a href="{% url 'cpp10'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+
+    .header-image {
+        width: 90px; /* Adjust size as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image with the middle of the text */
+        margin-right: 10px; /* Adds space between the image and the text */
+    }
+    
+    .topics{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+      gap: 10px; /* Space between cards */
+      max-width: 1200px; /* Optional: limit the max width of the container */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Add some padding around the container */
+    }
+    
+    
+    .about {
+        background-color: #fff; /* Gray background */
+        font: bold ;
+        font-size: 20px;
+        color: #000000; /* White font color */
+        /*text-shadow: 2px 2px 4px green;*/
+        box-shadow: #fff;
+        /*font-family: 'Courier New', Courier, monospace;  Monospaced computer font */
+        padding: 20px; /* Padding for spacing */
+        border-radius: 10px; /* Rounded corners */
+        margin: 20px; /* Margin for spacing around the box */
+        line-height: 1.6; /* Line height for better readability */
+        animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    }
+    
+    
+    
+    /*  styling */
+    .card h3 {
+      font-size: 1.5em;
+      color: #333;
+    }
+    
+    /* Button styling as a link */
+    .card-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: #007bff; /* Button background color */
+      color: #fff; /* Button text color */
+      border: none;
+      border-radius: 5px; /* Rounded button corners */
+      cursor: pointer;
+      font-size: 1em;
+      text-decoration: none; /* Remove underline from link */
+      transition: background-color 0.3s; /* Smooth hover effect */
+    }
+    
+    /* Button hover effect */
+    .card-button:hover {
+      background-color: #0056b3; /* Darken button color on hover */
+    }
+    /* Responsive design */
+    @media (max-width: 1200px) {
+            .card-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 cards per row on medium screens */
+            }
+        }
+    
+        @media (max-width: 900px) {
+            .card-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 cards per row on smaller screens */
+            }
+        }
+    
+        @media (max-width: 600px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile screens */
+            }
+        }
+    
+        @media (max-width: 400px) {
+            .card-container {
+                grid-template-columns: 1fr; /* 1 card per row on very small screens */
+            }
+        }
+    /* Container styling for grid layout */
+    
+    
+    /* Individual card styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    
+    
+    </style>
+
+
+
+{% endblock %}

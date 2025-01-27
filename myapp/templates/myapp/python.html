@@ -1,0 +1,229 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block title %}
+    PYTHON
+    
+{% endblock %}
+
+{% block content %}
+<div class="about">
+<p><h1>PYTHON    <img src="{% static 'styles/images/python-l.png' %}" alt="Python Logo" class="header-image" ></h1>
+
+    1.<b> Introduction :  </b><br>
+   Python is a high-level, interpreted programming language known for its simplicity and readability. Developed by  Guido van Rossum  in 1991, Python emphasizes code readability and developer productivity, making it ideal for beginners and professionals alike.
+   <br><br>
+2. <b>Timeline : </b> <br>
+   -  1989 : Guido van Rossum begins work on Python.  <br>
+   -  1991 : Python 1.0 is released, introducing core features like exception handling and functions.  <br>
+   -  2000 : Python 2.0 introduces list comprehensions and garbage collection.  <br>
+   -  2008 : Python 3.0 is released, emphasizing modernization and eliminating legacy issues. <br>  
+   -  2020 : Python 2.x officially reaches end-of-life.  <br>
+   -  2023 : Python 3.12 adds performance improvements and new syntax features.
+   <br><br>
+3. <b>Key Features : </b><br> 
+   -  Simple Syntax : Designed to be easy to read and write.  <br>
+   -  Versatile : Supports object-oriented, procedural, and functional programming paradigms. <br> 
+   -  Extensive Libraries : Provides pre-built modules for diverse applications.  <br>
+   -  Cross-Platform : Runs seamlessly on Windows, macOS, and Linux.<br><br>
+
+4.<b> Usage in Industries :</b>  <br>
+   Python is widely used in:  <br>
+   -  Data Science and Machine Learning : Libraries like Pandas, NumPy, and TensorFlow.  <br>
+   -  Web Development : Frameworks like Django and Flask.  <br>
+   -  Automation and Scripting : Automating repetitive tasks.  <br>
+   -  Cybersecurity : Building tools for ethical hacking and penetration testing. <br>  
+   -  Game Development : Libraries like Pygame.  <br><br>
+
+5.<b> Popularity : </b> <br>
+   Python is one of the most popular programming languages globally, often ranking #1 due to its versatility, ease of learning, and strong community support.
+   <br><br>
+6.<b> Performance :</b> <br>  
+   While Python is slower than compiled languages like C++ due to its interpreted nature, tools like PyPy, Cython, and Just-In-Time (JIT) compilation help optimize performance for specific tasks.
+   <br><br>
+7.<b> Challenges : </b><br> 
+   - Slower execution speed compared to low-level languages. <br> 
+   - Less suitable for mobile app development.  <br>
+   - Dependency management can be complex in large projects.
+   <br><br>
+8.<b> Modern Features : </b><br> 
+   -  Type Annotations : Introduced for better code clarity and tooling.  <br>
+   -  Pattern Matching : Simplifies decision-making logic (introduced in Python 3.10).  <br>
+   -  Asynchronous Programming : `async` and `await` for handling concurrency.  <br>
+   -  Dataclasses : Simplify the creation of classes for storing data.<br><br>
+
+9. <b>Ecosystem and Tools : </b> <br>
+   -  IDEs and Editors : PyCharm, Jupyter Notebook, Visual Studio Code.  <br>
+   -  Libraries and Frameworks : SciPy, Matplotlib, FastAPI, and Beautiful Soup.<br>  
+   -  Package Management : Tools like pip and conda for installing dependencies.<br><br>
+
+10.<b> Future of Python :</b>  <br>
+    Python's versatility ensures its continued dominance in fields like AI, data science, and web development. With ongoing enhancements and growing demand for automation and machine learning, Python remains a key language for modern software development.<br>
+</p></div>
+<div class="topics">
+    <div class="card-container">
+        <div class="card">
+            <h3>Introduction</h3>
+            <a href="{% url 'p1'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Casting</h3>
+            <a href="{% url 'p2'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Control Flow  </h3>
+            <a href="{% url 'p3'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Logical</h3>
+            <a href="{% url 'p4'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Conditional</h3>
+            <a href="{% url 'p5'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>String </h3>
+            <a href="{% url 'p6'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Lists</h3>
+            <a href="{% url 'p7'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>2D Array</h3>
+            <a href="{% url 'p8'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Dictionaries</h3>
+            <a href="{% url 'p9'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Functions</h3>
+            <a href="{% url 'p10'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+
+.header-image {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Aligns the image with the middle of the text */
+    margin-right: 10px; /* Adds space between the image and the text */
+}
+
+.topics{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+  gap: 10px; /* Space between cards */
+  max-width: 1200px; /* Optional: limit the max width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding around the container */
+}
+
+
+.about {
+    background-color: #fff; /* Gray background */
+    font: bold ;
+    font-size: 20px;
+    color: #000000; /* White font color */
+    /*text-shadow: 2px 2px 4px green;*/
+    box-shadow: #fff;
+    /*font-family: 'Courier New', Courier, monospace;  Monospaced computer font */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin for spacing around the box */
+    line-height: 1.6; /* Line height for better readability */
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+
+
+/*  styling */
+.card h3 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Button styling as a link */
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.card-button:hover {
+  background-color: #0056b3; /* Darken button color on hover */
+}
+/* Responsive design */
+@media (max-width: 1200px) {
+        .card-container {
+            grid-template-columns: repeat(4, 1fr); /* 4 cards per row on medium screens */
+        }
+    }
+
+    @media (max-width: 900px) {
+        .card-container {
+            grid-template-columns: repeat(3, 1fr); /* 3 cards per row on smaller screens */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .card-container {
+            grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile screens */
+        }
+    }
+
+    @media (max-width: 400px) {
+        .card-container {
+            grid-template-columns: 1fr; /* 1 card per row on very small screens */
+        }
+    }
+/* Container styling for grid layout */
+
+
+/* Individual card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+
+</style>
+
+{% endblock %}

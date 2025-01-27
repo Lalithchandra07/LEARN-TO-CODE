@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="k_styles/defination_styles.css">
+</head>
+<body>
+    <div class="definations">
+        <p>In Kotlin, null values are handled explicitly to avoid `NullPointerException`. By default, variables cannot hold `null`. To allow a variable to be `null`, append a question mark (`?`) to its type. This makes the type nullable.
+<br><br>
+             Basic Syntax: 
+             <pre><code>
+            var name: String? = null  // Nullable variable
+            name = "Kotlin"
+            println(name?.length)  // Safe call operator, prints length or null
+             
+            
+             Operators for Null Safety: 
+            -  Safe call (`?.`) : Calls a method only if the object is not null.
+            -  Elvis operator (`?:`) : Provides a default value if null.
+            
+             Example: 
+             
+            val length = name?.length ?: 0  // Default to 0 if name is null
+            println(length)  // Output: Length or 0
+        </code></pre>
+            
+            Kotlin ensures safer handling of null values. </p>
+    </div>
+</body>
+</html>

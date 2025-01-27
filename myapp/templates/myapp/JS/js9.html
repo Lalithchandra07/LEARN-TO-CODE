@@ -1,0 +1,52 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    /* Full-screen setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    /* Main container to fill the entire screen */
+    .iframe-container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+  
+    /* Compiler iframe to take up half the screen */
+    .compiler-iframe {
+      flex: 1;
+      border: none;
+    }
+  
+    /* Container for the other two iframes */
+    .side-iframes {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+  
+    /* Styling for the smaller iframes to take up remaining space */
+    .side-iframes iframe {
+      flex: 1;
+      border: none;
+    }
+  </style>
+  
+  <div class="iframe-container">
+    <!-- Compiler iframe takes half the window -->
+    <iframe src="https://paiza.io/projects/e/1ACtuP4-7u930chrflMupA?theme=twilight"  class="compiler-iframe"></iframe>
+    
+    <!-- Container for the two smaller iframes -->
+    <div class="side-iframes">
+      <iframe src="https://www.youtube.com/embed/wssvLtVSFeI?si=IpP6LNO_4eoZWlg5" ></iframe>
+      <iframe src="{% static 'js_definations/js9t.html'%}"></iframe> <!-- Replace with your desired URL -->
+    </div>
+  </div>
+  
+
+{% endblock %}

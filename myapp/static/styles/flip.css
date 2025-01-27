@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    perspective: 500px;
+    border-radius: 100px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+    margin: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-front .img{
+    width: 100px;
+    height: 100px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.card-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.card-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+.card-front {
+    background-color: grey; /* Green */
+}
+
+h2 {
+    font-style: italic;
+    color: darkgreen;
+}
+
+.card-back {
+    background-color: black; /* Red */
+    transform: rotateY(180deg);
+}
+
+
+.transition-1{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: rgb(67, 67, 67);
+    transition: 0.3s ease-out;
+
+}
+.transition-1 img{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+.transition-1.is-active{
+    top: 0;
+}
+
+/* Make the body and html full-height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set the background image for the body */
+body {
+    background-image: url('images/white.jpg'); /* Replace with your image path */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Style for the content */
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

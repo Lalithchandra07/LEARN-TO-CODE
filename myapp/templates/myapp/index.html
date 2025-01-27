@@ -1,0 +1,212 @@
+﻿{% extends 'myapp/base.html' %}
+
+{% block title %}
+    LEARN TO CODE
+{% endblock %}
+
+{% block content %}
+     <div class="content-overlay">
+     <h1>LEARN-2-CODE</h1>
+     <!---<p>Weloome to learn to code an online coding platform helps us to learn coding with videos,syntax and ides</p>-->
+</div>
+
+<div class="lc">
+<p><b>Learn to Code</b> is an interactive platform designed to make learning programming easy, engaging, and hands-on. It combines high-quality video tutorials, a glossary of essential coding definitions, and a built-in coding compiler, creating a comprehensive resource for users at all skill levels. Whether you're a beginner exploring programming for the first time or an advanced learner sharpening specific skills, Learn to Code provides an adaptable learning environment to suit your needs.
+
+    The video tutorials on Learn to Code are crafted by experienced developers and cover a wide range of programming languages, including Python, JavaScript, and Java. Each video breaks down complex concepts into digestible parts, allowing users to progress at their own pace. Alongside the videos, an extensive glossary of definitions provides clear explanations of key terms and technical jargon, acting as an on-demand reference to enhance understanding and confidence as users advance.
+    
+    One of the platform’s standout features is its integrated coding compiler, which supports multiple languages and allows users to test their knowledge directly on the site. By offering real-time feedback, the compiler encourages users to experiment with coding exercises and projects while reinforcing the skills they’ve learned from tutorials. This hands-on approach fosters a deeper understanding of programming, as learners can see the immediate impact of their code and troubleshoot errors with ease.
+    
+    With structured learning paths, personalized progress tracking, and an active community forum, Learn to Code offers a supportive ecosystem for continuous learning and growth. Whether aiming to develop a new skill or advance a career, users find the resources, guidance, and motivation they need to succeed in coding with Learn to Code.</p>
+
+</div>
+
+<div class="coding">
+
+    <p><b>WHAT IS CODING</p></b>Coding is the process of creating instructions for computers to follow. These instructions, written in specific programming languages like Python or JavaScript, tell the computer what tasks to perform, such as displaying a webpage or calculating numbers. Coding is how we communicate with computers to make them do things—whether it’s a simple task, like showing text on a screen, or a complex one, like controlling a robot. Essentially, coding transforms human ideas into a language computers understand, allowing us to build apps, websites, games, and much more.</p>
+</div>
+
+<div class="languages"><b>WHAT ARE CODING LANGUAGES</b><br><br>A coding language, or programming language, is a set of rules and syntax used to write instructions for computers. These languages allow us to create software, applications, websites, and more by translating human commands into a form a computer can process.
+
+    <br>Types of coding languages:<br>
+    
+    <br>1. Low-level languages: Close to machine code, which computers directly execute. Examples include Assembly Language and Machine Code.
+    
+    <br>2. High-level languages: More abstract and human-readable, often used for software development. Examples are Python, Java, and JavaScript.
+    
+    <br>3. Markup languages: Used for structuring and presenting data on websites. Examples include HTML and XML.
+    
+    <br>4. Query languages: Designed to retrieve data from databases. An example is SQL (Structured Query Language).
+    
+    <br>Each type serves different purposes, from web development to database management.</div>
+
+<div class="syntax">
+<p><b>WHAT IS SYNTAX</b><br>In simple terms, syntax is the set of rules that defines how to write code in a programming language. It’s like grammar in a spoken language; syntax dictates the correct arrangement of words, symbols, and expressions to create instructions a computer can understand.
+
+    For example, in many languages, you end each line with a semicolon (`;`), use `{}` to group code, and follow specific keywords for tasks (like `if`, `else`, `for`).
+    
+    If you don’t follow syntax rules, the program won’t run correctly, because the computer won’t be able to interpret your instructions.</p>
+
+</div>
+<style>
+
+/* Container styling */
+.lc {
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+/* Monospaced font for a code-like feel */
+    overflow: auto;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the box on the page */
+}
+
+
+/* Text styling within the container */
+.lc p {
+    line-height: 1.6;
+    color: #000; /* Slightly lighter gray for main text */
+    white-space: pre-line; /* Preserves line breaks */
+}
+
+
+/* Optional scrollbar styling (for overflow content) */
+.lc::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lc::-webkit-scrollbar-thumb {
+    background-color: #44475a;
+    border-radius: 4px;
+}
+
+.lc::-webkit-scrollbar-track {
+    background-color: #282a36;
+}
+
+/* Container styling */
+.content-overlay {
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% transparency */
+    border-radius: 20px; /* Rounded bar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Black shadow with some opacity */
+    padding: 10px 20px; /* Adds space inside the element */
+    margin-top: 20px; /* Creates a gap between the nav bar and the content */
+}
+
+/* Scrolling animation for h1 */
+.content-overlay h1 {
+    display: inline-block;
+    white-space: nowrap; /* Prevents line breaks */
+    font-size: 2em; /* Adjust font size as needed */
+    color: black; /* Sets the font color to black */
+    font-weight: bold; /* Makes the font bold */
+    padding: 5px 10px; /* Adds padding for better appearance */
+    border-radius: 20px; /* Creates a rounded bar effect */
+    animation: scroll-left 10s linear infinite; /* Controls speed and looping */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start from right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to left */
+    }
+}
+
+
+/* Container styling */
+.syntax {
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the box on the page */
+}
+
+/* Heading styling */
+.syntax h5 {
+    font-size: 1.5em; /* Slightly larger font for the heading */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    color: black; /* Dark gray for a softer look */
+}
+
+/* Paragraph text styling */
+.syntax p {
+    line-height: 1.6; /* Improves readability */
+    margin: 10px 0;
+}
+
+
+
+/* Container styling */
+.coding {
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the box on the page */
+}
+
+/* Heading styling */
+.coding h5 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and paragraph */
+}
+
+/* Paragraph styling */
+.coding p {
+    line-height: 1.6; /* Improved readability */
+    margin: 10px 0;
+}
+
+
+/* Container styling */
+.languages {
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the box on the page */
+}
+
+/* Heading styling */
+.languages h5 {
+    font-size: 1.5em; /* Larger font for heading */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and paragraph */
+}
+
+/* Paragraph styling */
+.languages p {
+    line-height: 1.6; /* Improved readability */
+    margin: 10px 0;
+}
+
+/* List styling */
+.languages ul {
+    margin: 10px 0;
+    padding-left: 20px; /* Indent list */
+}
+
+.languages li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+
+</style>
+
+{% endblock %}

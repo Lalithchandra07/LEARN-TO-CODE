@@ -1,0 +1,56 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="{% static 'styles/navbar.css' %}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'styles/images/logo4.png'%}" width="60px" height="50px" alt=""></a>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'course' %}">Course</a></li>
+        <!--<li><a href="{% url 'register' %}">Register</a></li>--->
+        <li><a href="{% url 'about' %}">About</a></li>
+    </ul>
+    <div class="navbar-toggle">
+        <!-- Icon for mobile toggle (burger icon) -->
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+    {% block content %}
+    <!-- Content for each page will be injected here -->
+    {% endblock %}
+</div>
+
+<!-- Footer (Optional) -->
+<footer>
+    <p>&copy; 2024 My Website</p>
+</footer>
+
+<!-- JavaScript for responsive toggle -->
+<script>
+    const toggle = document.querySelector('.navbar-toggle');
+    const links = document.querySelector('.navbar-links');
+    
+    toggle.addEventListener('click', () => {
+        links.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

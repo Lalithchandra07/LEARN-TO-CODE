@@ -1,0 +1,219 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    C
+{% endblock %}
+
+{% block content %}
+<div class="about">
+<p><img src="{% static 'styles/images/c-l1.png' %}" alt="Python Logo" class="header-image" ><br>
+    <b>1.Introduction</b><br>
+       - C is a general-purpose, procedural language created by  Dennis Ritchie  in  1972  at  Bell Labs  for system programming, especially for the  UNIX operating system .<br><br>
+    
+    <b>2.History and Development</b><br>
+       - Derived from  B  language, C became the foundation for many modern programming languages.<br>
+       - The seminal book *The C Programming Language* was published in 1978.<br><br>
+    
+       <b>3.Timeline</b><br>
+       - 1972: C created.<br>
+       - 1978: First edition of *The C Programming Language*.<br>
+       - 1983: ANSI C standard.<br>
+       - 1999: C99 standard.<br>
+       - 2011: C11 standard.<br><br>
+    
+       <b>4.Key Features</b><br>
+       - Low-level memory access via pointers.<br>
+       - Efficient execution and fast performance.<br>
+       - Portability across systems.<br><br>
+    
+       <b>5.Usage</b><br>
+       - Operating systems (e.g., UNIX, Linux).<br>
+       - Embedded systems.<br>
+       - Compilers,databases, and networking protocols.<br><br>
+    
+       <b>6.Influence on Other Languages</b><br>
+       - C influenced languages like  C++ ,  Java ,  Python , and  C# .<br><br>
+    
+       <b>7.Advantages</b><br>
+       - Efficiency and speed.<br>
+       - Control over system resources.<br>
+       - Portability to various platforms.<br><br>
+    
+       <b>8.Syntax</b><br>
+       - Simple syntax with curly braces `{}` for code blocks and  semicolons  `;` to end statements.
+       <br><br>
+       <b>9.Software Development</b><br>
+       - Used for  system software  (e.g., OS, compilers) and  performance-critical applications  (e.g., games).
+       <br><br>
+    <b>10.Legacy</b><br>
+       - C remains essential for low-level programming and is widely taught in computer science courses.
+       <br><br>
+    </p>
+    </div>
+    <div class="topics">
+      <div class="card-container">
+          <div class="card">
+              <h3>Introduction</h3>
+              <a href="{% url 'c1'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>Variables</h3>
+              <a href="{% url 'c2'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>Constants</h3>
+              <a href="{% url 'c3'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>Data types</h3>
+              <a href="{% url 'c4'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>Arthematic </h3>
+              <a href="{% url 'c5'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>Control Flow</h3>
+              <a href="{% url 'c6'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>Switch</h3>
+              <a href="{% url 'c7'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>Arrays </h3>
+              <a href="{% url 'c8'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div> <div class="card-container">
+          <div class="card">
+              <h3>2D Arrays </h3>
+              <a href="{% url 'c9'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div>
+  
+      <div class="card-container">
+          <div class="card">
+              <h3>C Array of String </h3>
+              <a href="{% url 'c10'%}" class="card-button">Go to Page</a>
+          </div>
+          
+      </div>
+  </div>
+  
+  <style>
+  
+  .header-image {
+      width: 50px; /* Adjust size as needed */
+      height: auto;
+      vertical-align: middle; /* Aligns the image with the middle of the text */
+      margin-right: 10px; /* Adds space between the image and the text */
+  }
+  
+  .topics{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+    gap: 10px; /* Space between cards */
+    max-width: 1200px; /* Optional: limit the max width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding around the container */
+  }
+  
+  
+  .about {
+      background-color: #fff; /* Gray background */
+      font-size: 20px;
+      color: #000000; /* White font color */
+      /*text-shadow: 2px 2px 4px green;*/
+      box-shadow: #fff;
+      /*font-family: 'Courier New', Courier, monospace;  Monospaced computer font */
+      padding: 20px; /* Padding for spacing */
+      border-radius: 10px; /* Rounded corners */
+      margin: 20px; /* Margin for spacing around the box */
+      line-height: 1.6; /* Line height for better readability */
+      animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  }
+  
+  
+  
+  /*  styling */
+  .card h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Button styling as a link */
+  .card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  /* Button hover effect */
+  .card-button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+  }
+  /* Responsive design */
+  @media (max-width: 1200px) {
+          .card-container {
+              grid-template-columns: repeat(4, 1fr); /* 4 cards per row on medium screens */
+          }
+      }
+  
+      @media (max-width: 900px) {
+          .card-container {
+              grid-template-columns: repeat(3, 1fr); /* 3 cards per row on smaller screens */
+          }
+      }
+  
+      @media (max-width: 600px) {
+          .card-container {
+              grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile screens */
+          }
+      }
+  
+      @media (max-width: 400px) {
+          .card-container {
+              grid-template-columns: 1fr; /* 1 card per row on very small screens */
+          }
+      }
+  /* Container styling for grid layout */
+  
+  
+  /* Individual card styling */
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  </style>
+{% endblock %}

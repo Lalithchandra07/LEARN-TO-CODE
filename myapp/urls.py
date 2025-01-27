@@ -1,0 +1,85 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('register/', views.register, name='register'),
+    path('course/', views.course, name='course'),
+    path('python/',views.python,name='python'), #adding url path from views 
+    path('c/',views.c,name='c'),
+    path('cpp/',views.cplus,name='cplus'),
+    path('java/',views.java,name='java'),
+    path('javascript/',views.javascript,name='javascript'),
+    path('kotlin/',views.kotlin,name='kotlin'),
+    
+    path('python/p1/',views.p1, name='p1'),
+    path('python/p2/',views.p2, name='p2'),
+    path('python/p3/',views.p3, name='p3'),
+    path('python/p4/',views.p4, name='p4'),
+    path('python/p5/',views.p5, name='p5'),
+    path('python/p6/',views.p6, name='p6'),
+    path('python/p7/',views.p7, name='p7'),
+    path('python/p8/',views.p8, name='p8'),
+    path('python/p9/',views.p9, name='p9'),
+    path('python/p10/',views.p10, name='p10'),
+
+    path('java/j1/',views.j1, name='j1'),
+    path('java/j2/',views.j2, name='j2'),
+    path('java/j3/',views.j3, name='j3'),
+    path('java/j4/',views.j4, name='j4'),
+    path('java/j5/',views.j5, name='j5'),
+    path('java/j6/',views.j6, name='j6'),
+    path('java/j7/',views.j7, name='j7'),
+    path('java/j8/',views.j8, name='j8'),
+    path('java/j9/',views.j9, name='j9'),
+    path('java/j10/',views.j10, name='j10'),
+
+    path('c/c1/',views.c1, name='c1'),
+    path('c/c2/',views.c2, name='c2'),
+    path('c/c3/',views.c3, name='c3'),
+    path('c/c4/',views.c4, name='c4'),
+    path('c/c5/',views.c5, name='c5'),
+    path('c/c6/',views.c6, name='c6'),
+    path('c/c7/',views.c7, name='c7'),
+    path('c/c8/',views.c8, name='c8'),
+    path('c/c9/',views.c9, name='c9'),
+    path('c/c10/',views.c10, name='c10'),
+   
+    path('kotlin/k1',views.k1,name='k1'),
+    path('kotlin/k2',views.k2,name='k2'),
+    path('kotlin/k3',views.k3,name='k3'),
+    path('kotlin/k4',views.k4,name='k4'),
+    path('kotlin/k5',views.k5,name='k5'),
+    path('kotlin/k6',views.k6,name='k6'),
+    path('kotlin/k7',views.k7,name='k7'),
+    path('kotlin/k8',views.k8,name='k8'),
+    path('kotlin/k9',views.k9,name='k9'),
+    path('kotlin/k10',views.k10,name='k10'),
+
+    path('js/js1/',views.js1, name='js1'),
+    path('js/js2/',views.js2, name='js2'),
+    path('js/js3/',views.js3, name='js3'),
+    path('js/js4/',views.js4, name='js4'),
+    path('js/js5/',views.js5, name='js5'),
+    path('js/js6/',views.js6, name='js6'),
+    path('js/js7/',views.js7, name='js7'),
+    path('js/js8/',views.js8, name='js8'),
+    path('js/js9/',views.js9, name='js9'),
+    path('js/js10/',views.js10, name='js10'),
+    
+    path('cpp/cpp1',views.cpp1,name='cpp1'),
+    path('cpp/cpp2',views.cpp2,name='cpp2'),
+    path('cpp/cpp3',views.cpp3,name='cpp3'),
+    path('cpp/cpp4',views.cpp4,name='cpp4'),
+    path('cpp/cpp5',views.cpp5,name='cpp5'),
+    path('cpp/cpp6',views.cpp6,name='cpp6'),
+    path('cpp/cpp7',views.cpp7,name='cpp7'),
+    path('cpp/cpp8',views.cpp8,name='cpp8'),
+    path('cpp/cpp9',views.cpp9,name='cpp9'),
+    path('cpp/cpp10',views.cpp10,name='cpp10'),
+
+
+
+
+]

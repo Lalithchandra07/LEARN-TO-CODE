@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c_styles/definations_styles.css">
+</head>
+<body>
+    <div class="definations">
+        <p>In C, the `switch` statement is a multi-way decision-making construct that executes one code block out of many based on the value of an expression. It is an alternative to using multiple `if-else` statements and improves readability when there are many conditions.
+<br><br>
+             Syntax: <br>
+             <pre><code>
+            switch (expression) {
+                case value1:
+                    // Code to execute
+                    break;
+                case value2:
+                    // Code to execute
+                    break;
+                 
+                default:
+                    // Code to execute if no cases match
+            }</code></pre>
+             
+            
+             Example: 
+             <pre><code>
+            int day = 2;
+            switch (day) {
+                case 1: printf("Monday"); break;
+                case 2: printf("Tuesday"); break;
+                default: printf("Invalid day");
+            }</code></pre>
+             
+            
+            The `break` statement exits the `switch`, preventing fall-through. The `default` case is optional and handles unmatched values.</p>
+    </div>
+</body>
+</html>

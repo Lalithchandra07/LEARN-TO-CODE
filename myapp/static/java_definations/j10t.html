@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="java_styles/definations_styles.css">
+</head>
+<body>
+    <div class="definations">
+        <p>In Java, a constructor is a special method used to initialize objects. It is called automatically when an object is created using the new keyword. Constructors have the same name as the class and do not have a return type. They can be used to set initial values for object attributes.
+<br><br>
+            There are two types of constructors in Java:<br>
+            1.  Default constructor : A constructor that does not accept parameters and initializes object fields to default values.<br>
+            2.  Parameterized constructor : A constructor that accepts parameters to initialize object fields with specific values.<br>
+            <br>
+             Syntax: 
+            <pre><code>
+            class ClassName {
+                ClassName() {  // Default constructor
+                    // Initialization code
+                }
+                
+                ClassName(int value) {  // Parameterized constructor
+                    // Initialization code
+                }
+            }
+            
+            
+             Example: 
+            java
+            class Car {
+                String model;
+                
+                Car(String model) {  // Constructor with parameter
+                    this.model = model;
+                }
+                
+                void display() {
+                    System.out.println("Model: " + model);
+                }
+            }
+            
+            public class Main {
+                public static void main(String[] args) {
+                    Car car1 = new Car("Tesla");  // Creating object with parameterized constructor
+                    car1.display();
+                }
+            }
+            
+        </code></pre>
+            Constructors are essential for object initialization in Java.</p>
+    </div>
+</body>
+</html>

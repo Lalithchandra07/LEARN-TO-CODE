@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cp_styles/definations_styles.css">
+</head>
+<body>
+    <div class="definations">
+        <p>In C++, function overloading allows you to define multiple functions with the same name but different parameters. The compiler differentiates between the functions based on the number, type, or order of parameters. Function overloading enhances readability and provides flexibility by allowing the same operation to work with different types of input.
+<br><bR>
+             Syntax: 
+             <pre><code>
+            
+            return_type function_name(parameter_list);
+        </code></pre>
+            
+             Example:
+             <pre><code>
+            #include <iostream>
+            using namespace std;
+            
+            int add(int a, int b) {
+                return a + b;
+            }
+            
+            double add(double a, double b) {
+                return a + b;
+            }
+            
+            int main() {
+                cout << add(2, 3) << endl;       // Calls add(int, int)
+                cout << add(2.5, 3.7) << endl;   // Calls add(double, double)
+                return 0;
+            }
+        </code></pre>
+            
+            Here, the `add` function is overloaded to handle both integer and double inputs. The compiler determines the correct function to call based on the argument types.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    JAVA
+{% endblock %}
+
+{% block content %}
+<div class="about">
+    <p><b><h1>Java   <img src="{% static 'styles/images/java-l.png' %}" alt="Python Logo" class="header-image" ><br></b></h1>
+
+        <b>1. Introduction:  </b><br>
+   Java is a versatile, platform-independent, object-oriented programming language developed by **James Gosling** and his team at Sun Microsystems. Released in 1995, Java is designed to have as few implementation dependencies as possible, enabling developers to "write once, run anywhere" (WORA).<br><br>
+
+   <b>2. Timeline : </b> <br>
+   - 1991 : Development begins under the project codename "Oak." <br>  
+   - 1995 : Official launch as Java 1.0.  <br>
+   - 1997 : Sun Microsystems formalizes Java's standardization. <br>  
+   - 2006 : Open-sourced under the GNU General Public License (GPL). <br>  
+   - 2010 : Oracle Corporation acquires Sun Microsystems.  <br>
+   - 2023 : Latest version, Java 21, is released, continuing its long-term development cycle. <br><br>
+
+   <b>3. Key Features : </b> <br> 
+   - Platform independence (via the Java Virtual Machine)  <br>  
+   - Object-oriented programming (OOP)  <br>
+   - Automatic memory management (Garbage Collection) <br>  
+   - Robust and secure design  <br>
+   - Multithreading and concurrency support  <br><br>
+
+   <b>4. Usage in Industries : </b> <br>
+   Java is widely used across various domains : <br>  
+   - Web Development  (e.g., Spring Framework, Java EE) <br>  
+   - Enterprise Applications (e.g., banking and financial systems) <br> 
+   - Mobile Development (especially Android apps)  <br>
+   - Big Data (e.g., Hadoop and Apache Spark)  <br>
+   - IoT and Embedded Systems  <br><br>
+
+   <b>5. Popularity : </b> <br>
+   Java is one of the most popular programming languages globally, often ranking among the top three in developer surveys due to its versatility and community support.
+   <br><br>
+   <b>6. Performance : </b><br>  
+   Java's performance has improved significantly with Just-In-Time (JIT) compilation and other optimizations. While slightly slower than low-level languages like C++, its trade-offs ensure portability and developer productivity.
+   <br><br>
+   <b>7. Challenges : </b><br>  
+   - Verbose syntax compared to newer languages <br>  
+   - Slightly higher memory usage due to JVM overhead <br> 
+   - Slower execution compared to compiled languages like C++ <br><br> 
+
+   <b>8. Ecosystem and Tools : </b> <br>
+   - Integrated Development Environments (IDEs) : IntelliJ IDEA, Eclipse, NetBeans<br>  
+   - Frameworks : Spring, Hibernate, JavaFX  <br>
+   - Libraries : Rich ecosystem for almost every domain (e.g., Apache Commons, Google Guava)<br><br>
+
+   <b>9. Modern Features : </b> <br>
+   Recent Java versions introduced features like :<br>  
+   - Lambda expressions and streams (Java 8)  <br>
+   - Modules (Java 9)  <br>
+   - Records, pattern matching, and sealed classes (Java 14–16) <br>  
+   - Virtual Threads and structured concurrency (Java 19+)<br><br>
+
+<b>10. Future of Java : </b> <br>
+   With its predictable release cycle, robust ecosystem, and continuous evolution, Java remains a cornerstone of software development, adaptable for both legacy and modern applications. It continues to dominate enterprise-level solutions and has a promising future in cloud and microservices architectures.</p>
+   <br><br>
+</div>
+
+<div class="topics">
+    <div class="card-container">
+        <div class="card">
+            <h3>Introduction</h3>
+            <a href="{% url 'j1'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>GUI </h3>
+            <a href="{% url 'j2'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Logical </h3>
+            <a href="{% url 'j3'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Array </h3>
+            <a href="{% url 'j4'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>2D Array</h3>
+            <a href="{% url 'j5'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Wrapper </h3>
+            <a href="{% url 'j6'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>2D Arraylist </h3>
+            <a href="{% url 'j7'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Final</h3>
+            <a href="{% url 'j8'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>OOPS</h3>
+            <a href="{% url 'j9'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+
+
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Constructors</h3>
+            <a href="{% url 'j10'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+
+    .header-image {
+        width: 50px; /* Adjust size as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image with the middle of the text */
+        margin-right: 10px; /* Adds space between the image and the text */
+    }
+    
+    .topics{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+      gap: 10px; /* Space between cards */
+      max-width: 1200px; /* Optional: limit the max width of the container */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Add some padding around the container */
+    }
+    
+    
+    .about {
+        background-color: #fff; /* Gray background */
+        font-size: 20px;
+        color: #000000; /* White font color */
+        /*text-shadow: 2px 2px 4px green;*/
+        box-shadow: #fff;
+        /*font-family: 'Courier New', Courier, monospace;  Monospaced computer font */
+        padding: 20px; /* Padding for spacing */
+        border-radius: 10px; /* Rounded corners */
+        margin: 20px; /* Margin for spacing around the box */
+        line-height: 1.6; /* Line height for better readability */
+        animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    }
+    
+    
+    
+    /*  styling */
+    .card h3 {
+      font-size: 1.5em;
+      color: #333;
+    }
+    
+    /* Button styling as a link */
+    .card-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: #007bff; /* Button background color */
+      color: #fff; /* Button text color */
+      border: none;
+      border-radius: 5px; /* Rounded button corners */
+      cursor: pointer;
+      font-size: 1em;
+      text-decoration: none; /* Remove underline from link */
+      transition: background-color 0.3s; /* Smooth hover effect */
+    }
+    
+    /* Button hover effect */
+    .card-button:hover {
+      background-color: #0056b3; /* Darken button color on hover */
+    }
+    /* Responsive design */
+    @media (max-width: 1200px) {
+            .card-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 cards per row on medium screens */
+            }
+        }
+    
+        @media (max-width: 900px) {
+            .card-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 cards per row on smaller screens */
+            }
+        }
+    
+        @media (max-width: 600px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile screens */
+            }
+        }
+    
+        @media (max-width: 400px) {
+            .card-container {
+                grid-template-columns: 1fr; /* 1 card per row on very small screens */
+            }
+        }
+    /* Container styling for grid layout */
+    
+    
+    /* Individual card styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    
+    
+    </style>
+
+
+{% endblock %}

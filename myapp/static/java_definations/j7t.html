@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="java_styles/definations_styles.css">
+</head>
+<body>
+    <div class="definations">
+        <p>A 2D  ArrayList  in Java is an  ArrayList  of  ArrayList  objects, essentially creating a dynamic two-dimensional structure. It is more flexible than a 2D array since the size of each row can vary, and it allows dynamic resizing.
+<br><br>
+             Basic Syntax for Declaring a 2D  ArrayList : 
+             <pre><code>
+             
+            ArrayList<ArrayList<data_type>> arrayList = new ArrayList<>();
+             
+            
+             Example: 
+             
+            ArrayList<ArrayList<Integer>> matrix = new ArrayList<>();
+            ArrayList<Integer> row1 = new ArrayList<>();
+            row1.add(1); row1.add(2); row1.add(3);
+            matrix.add(row1);
+            
+            ArrayList<Integer> row2 = new ArrayList<>();
+            row2.add(4); row2.add(5); row2.add(6);
+            matrix.add(row2);
+            
+            System.out.println(matrix.get(0).get(1));  // Output: 2
+        </code></pre>
+            
+            This creates a 2D  ArrayList  where each row is a separate  ArrayList , and elements are accessed using  get(rowIndex).get(columnIndex) .</p>
+    </div>
+</body>
+</html>

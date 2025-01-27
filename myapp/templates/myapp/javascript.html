@@ -1,0 +1,235 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    JAVA SCRIPT
+{% endblock %}
+
+{% block content %}
+<div class="about">
+    <p><b><h3>JAVA SCRIPT   </b> <img src="{% static 'styles/images/js2.png' %}" alt="Python Logo" class="header-image" ><br></H3>
+
+1. <b> Introduction : </b>  <br>
+   JavaScript is a versatile, high-level programming language primarily used to add interactivity, dynamic content, and functionality to websites. It is a core web technology alongside HTML and CSS and can run in browsers or on servers via platforms like Node.js.
+   <br><br>
+2.  <b>Timeline :  </b> <br>
+   -  1995 : JavaScript (originally called Mocha, later LiveScript) is created by Brendan Eich  at Netscape.<br>  
+   -  1996 : Renamed to JavaScript to align with Java's branding, despite being unrelated.  <br>
+   -  1997 : Standardized as ECMAScript (ES1).  <br>
+   -  2009 : Node.js is introduced, enabling JavaScript on servers.<br>  
+   -  2015 : ECMAScript 6 (ES6) brings modern syntax and features like classes, modules, and promises. <br>  
+   -  Present : JavaScript continues to evolve with annual updates.<br><br>
+
+3. <b> Key Features : </b>  <br>
+   -  Interactivity : Adds dynamic content and user engagement (e.g., sliders, pop-ups).  <br>  
+   -  Event-Driven Programming : Responds to user actions like clicks and keyboard input.  <br>
+   -  Asynchronous Programming : Handles tasks like data fetching without blocking other operations.  <br>  
+   -  Cross-Platform : Runs on any device with a web browser or on servers.<br><br>
+
+4. <b> Usage in Industries : </b>  <br>
+   JavaScript is ubiquitous in web development and beyond: <br> 
+   -  Web Applications : Dynamic front-end frameworks like React, Angular, and Vue.js.<br>  
+   -  Server-Side Development : Using Node.js for backend logic.  <br>
+   -  Mobile Apps : Frameworks like React Native.  <br>
+   -  Game Development : Browser-based games using libraries like Phaser.js.  <br>  
+   -  IoT and Machine Learning : Expanding into non-traditional areas.<br><br>
+
+5. <b> Popularity : </b>  <br>
+   JavaScript is the most widely used programming language, consistently ranking #1 in developer surveys due to its versatility and massive ecosystem.
+   <br><br>
+6. <b> Performance :</b> <br>  
+   JavaScript has become highly performant, thanks to modern browser engines like Google’s V8 (used in Chrome) and JIT (Just-In-Time) compilation. Tools like WebAssembly further enhance its speed.
+   <br><br>
+7. <b> Challenges : </b>  <br>
+   - Browser compatibility issues, although reduced with modern standards.  <br>
+   - Asynchronous programming can be complex to manage.  <br>
+   - Security risks like cross-site scripting (XSS) if not handled properly.<br><br>
+
+8. <b> Modern Features :  </b> <br>
+   -  Arrow Functions : Concise syntax for functions. <br> 
+   -  Promises and Async/Await : Simplify asynchronous code. <br> 
+   -  Modules : Enable reusable and organized code.  <br>
+   -  Destructuring and Spread Operators : Enhance code readability and flexibility.  
+   <br><br>
+9.  <b>Ecosystem and Tools : </b>  <br> 
+   -  Libraries : jQuery, Lodash.<br>  
+   -  Frameworks : React, Angular, Vue.js.<br>  
+   -  Build Tools : Webpack, Babel, and Vite. <br> 
+   -  Testing Tools : Jest, Mocha, and Cypress.  <br><br>
+
+10. <b> Future of JavaScript :</b>   <br>
+    With continuous updates through ECMAScript and expanding use cases in web, server-side, and cross-platform development, JavaScript remains the backbone of web development. Its ecosystem and adaptability ensure a strong presence in future technologies like AI, IoT, and virtual reality.
+    <br>
+    </p>
+</div>
+
+
+<div class="topics">
+    <div class="card-container">
+        <div class="card">
+            <h3>Introduction</h3>
+            <a href="{% url 'js1'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Variables </h3>
+            <a href="{% url 'js2'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Type Conversion</h3>
+            <a href="{% url 'js3'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Constants</h3>
+            <a href="{% url 'js4'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Math Function</h3>
+            <a href="{% url 'js5'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Control Flow</h3>
+            <a href="{% url 'js6'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Switches </h3>
+            <a href="{% url 'js7'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>Ternarry</h3>
+            <a href="{% url 'js8'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div> <div class="card-container">
+        <div class="card">
+            <h3>String </h3>
+            <a href="{% url 'js9'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Logical </h3>
+            <a href="{% url 'js10'%}" class="card-button">Go to Page</a>
+        </div>
+        
+    </div>
+</div>
+
+<style>
+
+    .header-image {
+        width: 50px; /* Adjust size as needed */
+        height: auto;
+        vertical-align: middle; /* Aligns the image with the middle of the text */
+        margin-right: 10px; /* Adds space between the image and the text */
+    }
+    
+    .topics{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Create 5 equal-width columns */
+      gap: 10px; /* Space between cards */
+      max-width: 1200px; /* Optional: limit the max width of the container */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Add some padding around the container */
+    }
+    
+    
+    .about {
+        background-color: #fff; /* Gray background */
+        font: bold ;
+        font-size: 20px;
+        color: #000000; /* White font color */
+        /*text-shadow: 2px 2px 4px green;*/
+        box-shadow: #fff;
+        /*font-family: 'Courier New', Courier, monospace;  Monospaced computer font */
+        padding: 20px; /* Padding for spacing */
+        border-radius: 10px; /* Rounded corners */
+        margin: 20px; /* Margin for spacing around the box */
+        line-height: 1.6; /* Line height for better readability */
+        animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    }
+    
+    
+    
+    /*  styling */
+    .card h3 {
+      font-size: 1.5em;
+      color: #333;
+    }
+    
+    /* Button styling as a link */
+    .card-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: #007bff; /* Button background color */
+      color: #fff; /* Button text color */
+      border: none;
+      border-radius: 5px; /* Rounded button corners */
+      cursor: pointer;
+      font-size: 1em;
+      text-decoration: none; /* Remove underline from link */
+      transition: background-color 0.3s; /* Smooth hover effect */
+    }
+    
+    /* Button hover effect */
+    .card-button:hover {
+      background-color: #0056b3; /* Darken button color on hover */
+    }
+    /* Responsive design */
+    @media (max-width: 1200px) {
+            .card-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 cards per row on medium screens */
+            }
+        }
+    
+        @media (max-width: 900px) {
+            .card-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 cards per row on smaller screens */
+            }
+        }
+    
+        @media (max-width: 600px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile screens */
+            }
+        }
+    
+        @media (max-width: 400px) {
+            .card-container {
+                grid-template-columns: 1fr; /* 1 card per row on very small screens */
+            }
+        }
+    /* Container styling for grid layout */
+    
+    
+    /* Individual card styling */
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    
+    
+    </style>
+
+
+{% endblock %}
